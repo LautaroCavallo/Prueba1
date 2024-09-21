@@ -149,3 +149,61 @@ footer {
         height: 120px; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
     }
 }
+
+/* Sección de Experiencias */
+.experience {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.experience-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se acomoden en pantallas pequeñas */
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.card p strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .experience-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
