@@ -3,9 +3,9 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Fondo claro general */
     color: #333;
-    text-align: center;
+    text-align: center; /* Centra el texto */
 }
 
 a {
@@ -19,7 +19,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #333; /* Fondo oscuro */
     color: white;
     padding: 10px 0;
 }
@@ -29,7 +29,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra el menú horizontalmente */
 }
 
 header nav ul li {
@@ -37,27 +37,27 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: white; /* Texto blanco en el menú */
     font-weight: bold;
     text-transform: uppercase;
 }
 
-/* Hero Section*/
+/* Hero Section (Inicio) */
 .hero {
-    background-color: #333; 
-    color: white;
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
     padding: 60px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .hero h1 {
@@ -73,37 +73,14 @@ header nav ul li a {
 .perfil {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Hace la imagen redonda */
-    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+    border-radius: 50%; /* Imagen redonda */
+    object-fit: cover;
 }
 
-/* Secciones Centradas */
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-section p, section ul {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-    text-align: center;
-}
 /* Sección de Experiencias */
 .experience {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #fff; /* Fondo blanco */
     text-align: center;
 }
 
@@ -125,7 +102,7 @@ section p, section ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 300px; /* Ancho máximo de la tarjeta */
-    text-align: left; 
+    text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
 }
 
 .card h3 {
@@ -147,19 +124,64 @@ section p, section ul {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
     text-align: center;
     padding: 10px 0;
     width: 100%;
     position: relative;
 }
 
-/* Responsividad para pantallas pequeñas */
+/* Responsividad para pantallas medianas (tablets) */
 @media (max-width: 768px) {
-    .experience-cards {
+    header nav ul {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-content {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .experience-cards {
+        flex-direction: column; /* Tarjetas apiladas en pantallas medianas */
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
+
+/* Responsividad para pantallas pequeñas (celulares) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .experience-cards {
+        flex-direction: column; /* Tarjetas apiladas en pantallas pequeñas */
     }
 
     .card {
