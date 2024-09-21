@@ -119,4 +119,31 @@ footer {
 
     .hero p {
         font-size: 1em;
-   
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+}
