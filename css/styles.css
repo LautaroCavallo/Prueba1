@@ -42,25 +42,39 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-/* Hero Section con texto e imagen centrados */
+/* Hero Section con imagen y texto lado a lado */
 .hero {
     background-color: #333;
     color: white;
     padding: 60px 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre la imagen y el texto */
 }
 
 .hero h1 {
     font-size: 3em;
+    margin: 0;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-top: 10px;
+}
+
+.perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
 }
 
 /* Secciones Centradas */
@@ -84,7 +98,7 @@ section p, section ul {
     font-size: 1.1em;
     line-height: 1.6;
     color: #555;
-    text-align: center; /* Asegura que todo el contenido del texto esté centrado */
+    text-align: center;
 }
 
 /* Footer */
@@ -99,8 +113,8 @@ footer {
 
 /* Responsividad */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
+    .hero-content {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
         gap: 10px;
     }
 
@@ -122,10 +136,6 @@ footer {
 }
 
 @media (max-width: 400px) {
-    header nav ul li {
-        margin: 5px 0;
-    }
-
     .hero h1 {
         font-size: 1.8em;
     }
@@ -134,7 +144,8 @@ footer {
         font-size: 0.9em;
     }
 
-    section h2 {
-        font-size: 1.3em;
+    .perfil {
+        width: 120px;
+        height: 120px; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
     }
 }
