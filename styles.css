@@ -143,3 +143,38 @@ footer {
         padding: 8px 0;
     }
 }
+
+
+/* Estilos para la sección Sobre Mí con imagen */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content .perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content .perfil {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-content .perfil {
+        width: 100px;
+        height: 100px;
+    }
+}
