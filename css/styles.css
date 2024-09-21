@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center; /* Centra el texto por defecto */
+    text-align: center;
 }
 
 a {
@@ -29,7 +29,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra el menú horizontalmente */
+    justify-content: center;
 }
 
 header nav ul li {
@@ -42,9 +42,9 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-/* Hero Section con imagen y texto lado a lado */
+/* Hero Section*/
 .hero {
-    background-color: #333;
+    background-color: #333; 
     color: white;
     padding: 60px 20px;
     display: flex;
@@ -57,7 +57,7 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Espacio entre la imagen y el texto */
+    gap: 20px; 
 }
 
 .hero h1 {
@@ -86,7 +86,7 @@ section {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el texto de las secciones */
+    text-align: center;
 }
 
 section h2 {
@@ -125,7 +125,7 @@ section p, section ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 300px; /* Ancho máximo de la tarjeta */
-    text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
+    text-align: left; 
 }
 
 .card h3 {
