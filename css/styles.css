@@ -77,6 +77,16 @@ header nav ul li a {
     object-fit: cover;
 }
 
+.intro-text {
+    margin: 20px auto; /* Centra la sección y agrega espacio */
+    max-width: 800px; /* Limita el ancho máximo */
+    padding: 20px;
+    text-align: center; /* Asegura que el texto esté centrado */
+    font-size: 1.2em;
+    line-height: 1.6; /* Mejor lectura */
+    color: #555; /* Color del texto */
+}
+
 /* Sección de Experiencias */
 .experience {
     padding: 40px 20px;
