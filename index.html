@@ -1,140 +1,37 @@
-/* Estilos Generales */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center; /* Centra el texto por defecto */
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lautaro Cavallo | Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-a {
-    color: #333;
-    text-decoration: none;
-}
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="images/perfil.jpg" alt="Foto de Lautaro Cavallo" class="perfil">
+            <div>
+                <h1>Lautaro Cavallo</h1>
+                <p>Ingeniero de Redes y Desarrollador</p>
+            </div>
+        </div>
+    </section>
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centra el menú horizontalmente */
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Hero Section con texto e imagen centrados */
-.hero {
-    background-color: #333;
-    color: white;
-    padding: 60px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-}
-
-.hero h1 {
-    font-size: 3em;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Secciones Centradas */
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centra el texto de las secciones */
-}
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-section p, section ul {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-    text-align: center; /* Asegura que todo el contenido del texto esté centrado */
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: relative;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    section h2 {
-        font-size: 1.5em;
-    }
-
-    section {
-        padding: 30px 15px;
-    }
-}
-
-@media (max-width: 400px) {
-    header nav ul li {
-        margin: 5px 0;
-    }
-
-    .hero h1 {
-        font-size: 1.8em;
-    }
-
-    .hero p {
-        font-size: 0.9em;
-    }
-
-    section h2 {
-        font-size: 1.3em;
-    }
-}
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 Lautaro Cavallo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
